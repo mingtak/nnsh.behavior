@@ -37,6 +37,15 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
+        title="RegiForm"
+        description="Registration behavior"
+        provides=".regiform.IRegiForm"
+        factory=".regiform.RegiForm"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+
+    <plone:behavior
         title="AttachedFile"
         description="Attached file"
         provides=".attachedfile.IAttachedFile"
