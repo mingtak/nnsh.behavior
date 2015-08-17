@@ -37,6 +37,15 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
+        title="SelectTheme"
+        description="Select theme for this folder"
+        provides=".selecttheme.ISelectTheme"
+        factory=".selecttheme.SelectTheme"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+
+    <plone:behavior
         title="RegiForm"
         description="Registration behavior"
         provides=".regiform.IRegiForm"
